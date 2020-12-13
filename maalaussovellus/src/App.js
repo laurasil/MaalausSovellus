@@ -1,53 +1,82 @@
-import React, { useReducer, useState } from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import './App.css';
-
-
-const formReducer = (state, event) => {
-  return {
-    ...state,
-    [event.name]: event.value
-  }
-  }
   
-  function App() {
-    const [formData, setFormData] = useReducer(formReducer, {});
-  
-    const handleChange = event => {
-      setFormData({
-        name: event.target.name,
-        value: event.target.value,
-      });
-    }
+  export default function App() {
+    const [values, setValues] = useState({
+      nimi: '',
+      hinta: '',
+      maara: '',
+      riittoisuus: '',
+    });
+
+    const [submitted, setSubmitted] = useState(false);
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      setSubmitted(true);
+    };
+
+    const handleNimiInputChange = (event) => {
+      event.persist();
+      setValues((values) => ({
+        ...values,
+        nimi: event.target.value,
+      }));
+    };
+
+    const handleHintaInputChange = (event) => {
+      event.persist();
+      setValues((values) => ({
+        ...values,
+        hinta: event.target.value,
+      }));
+    };
+
+    const handleMaaraInputChange = (event) => {
+      event.persist();
+      setValues((values) => ({
+        ...values,
+        maara: event.target.value,
+      }));
+    };
+
+    const handleRiittoisuusInputChange = (event) => {
+      event.persist();
+      setValues((values) => ({
+        ...values,
+        riittoisuus: event.target.value,
+      }));
+    };
   
     return(
-      <div className="wrapper">
+      <div className="lomake">
         <h1>Maalilaskuri</h1>
   
-        <form onSubmit={handleSubmit}>
+        <form class="form" onSubmit={handleSubmit}>
             <label>
               <p>Maalin nimi</p>
-              <input name="nimi" onChange={handleChange} value={formData.nimi}/>
+              <input id="nimi" class="formField" type="text" name="nimi" onChange={handleNimiInputChange} value={values.nimi}/>
             </label>
             <label>
             <p>Maalin hinta (€/litra)</p>
-              <input name="hinta" onChange={handleChange} value={formData.hinta}/>
+              <input id="hinta" class="formField" type="text" name="hinta" onChange={handleHintaInputChange} value={values.hinta}/>
             </label>
             <label>
             <p>Maalattava pinta-ala (m2)</p>
-              <input name="maara" onChange={handleChange} value={formData.maara}/>
+              <input id="maara" class="formField" type="text" name="maara" onChange={handleMaaraInputChange} value={values.maara}/>
             </label>
             <label>
             <p>Maakauskertoja</p>
-              <input name="kerroin" onChange={handleChange} value={formData.kerroin}/>
+              <input id="riittoisuus" class="formField" type="text" name="riittoisuus" onChange={handleRiittoisuusInputChange} value={values.riittoisuus}/>
             </label>
-          <button type="submit">Lasketaan maalauksen hinta</button>
+          <button class="formField" type="submit">Lasketaan maalauksen hinta</button>
         </form>
       </div>
     )
   }
    
-   ReactDOM.render(<App />, document.getElementById("root"));
+ export default App;
 
 
 
