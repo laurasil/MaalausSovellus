@@ -73,6 +73,7 @@ import './App.css';
           <button class="formField" type="submit">Lasketaan maalauksen hinta</button>
         </form>
       </div>
+
     )
   }
 
