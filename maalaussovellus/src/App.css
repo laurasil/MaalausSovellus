@@ -9,12 +9,12 @@
 
 h1 {
   font-size: 150;
-  font-family: 'Cinzel', serif;
+  font-family: 'Bodoni MT', serif  ;
 }
 
 h2 {
   font-size: 150;
-  font-family: 'Cinzel', serif;
+  font-family: 'Bodoni MT', serif;
 }
 
 label {
@@ -26,6 +26,8 @@ input {
 }
 
 .lomake {
-  background-color: #f77e5e;
+  background-color: rgba(167, 136, 111, 0.7);
+  width: 500px;
+  margin: auto;
 }
 
