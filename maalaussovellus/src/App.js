@@ -67,7 +67,7 @@ import './App.css';
               <input id="maara" class="formField" type="text" name="maara" onChange={handleMaaraInputChange} value={values.maara}/>
             </label>
             <label>
-            <p>Maakauskertoja</p>
+            <p>Maakauskertojen lukumäärä</p>
               <input id="riittoisuus" class="formField" type="text" name="riittoisuus" onChange={handleRiittoisuusInputChange} value={values.riittoisuus}/>
             </label>
             <br></br><br></br>
