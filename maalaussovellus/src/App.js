@@ -70,7 +70,8 @@ import './App.css';
             <p>Maakauskertoja</p>
               <input id="riittoisuus" class="formField" type="text" name="riittoisuus" onChange={handleRiittoisuusInputChange} value={values.riittoisuus}/>
             </label>
-          <button class="formField" type="submit">Lasketaan maalauksen hinta</button>
+            <br></br><br></br>
+          <button class="formField" type="submit">Laske</button>
         </form>
       </div>
 

@@ -23,9 +23,17 @@ label {
 
 input {
   color: rgb(8, 8, 8);
+  border: 2px solid;
+  margin: 0.25rem;
+  padding: 0.5;
+  text-align: center;
 }
 
 .lomake {
   background-color: #f77e5e;
 }
 
+button {
+  padding: 10px;
+  margin: 15px;
+}
