@@ -4,7 +4,7 @@ import './App.css';
   
   export default function App() {
     const [values, setValues] = useState({
-      nimi: '',
+      maaliNimi: '',
       hinta: '',
       maara: '',
       riittoisuus: '',
@@ -17,11 +17,11 @@ import './App.css';
       setSubmitted(true);
     };
 
-    const handleNimiInputChange = (event) => {
+    const handleMaaliNimiInputChange = (event) => {
       event.persist();
       setValues((values) => ({
         ...values,
-        nimi: event.target.value,
+        maaliNimi: event.target.value,
       }));
     };
 
@@ -56,7 +56,7 @@ import './App.css';
         <form class="form" onSubmit={handleSubmit}>
             <label>
               <p>Maalin nimi</p>
-              <input id="nimi" class="formField" type="text" name="nimi" onChange={handleNimiInputChange} value={values.nimi}/>
+              <input id="maaliNimi" class="formField" type="text" name="maaliNimi" onChange={handleMaaliNimiInputChange} value={values.maaliNimi}/>
             </label>
             <label>
             <p>Maalin hinta (€/litra)</p>

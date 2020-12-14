@@ -6,14 +6,18 @@
             {"nimi": "olohuone", "pintaAla": 15, "tyyppikerroin": 1.3},
             {"nimi": "ruokailutila", "pintaAla": 10, "tyyppikerroin": 1.0},
             {"nimi": "keittiö", "pintaAla": 9, "tyyppikerroin": 1.0}
-        ]
+        ],
+        "kokonaisPintaAla": 48,
+        "tyyppikerroinKA": 1.15
     },
     {
-        "asunto": "kolmio",
+        "asunto": "kaksio",
         "huoneet": [
             {"nimi": "makuuhuone", "pintaAla": 12, "tyyppikerroin": 1.0},
             {"nimi": "olohuone", "pintaAla": 12, "tyyppikerroin": 1.3},
             {"nimi": "keittiö", "pintaAla": 8, "tyyppikerroin": 1.0}
-        ]
+        ],
+        "kokonaisPintaAla": 32,
+        "tyyppikerroinKA": 1.1
     }
 ]
