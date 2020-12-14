@@ -63,18 +63,17 @@ import './App.css';
               <input id="hinta" class="formField" type="text" name="hinta" onChange={handleHintaInputChange} value={values.hinta}/>
             </label>
             <label>
-            <p>Maalattava pinta-ala (m2)</p>
+            <p>Maalauskertojen lukumäärä</p>
               <input id="maara" class="formField" type="text" name="maara" onChange={handleMaaraInputChange} value={values.maara}/>
             </label>
             <label>
-            <p>Maalauskertoja</p>
+            <p>Maalin riittoisuus (m2/l)</p>
               <input id="riittoisuus" class="formField" type="text" name="riittoisuus" onChange={handleRiittoisuusInputChange} value={values.riittoisuus}/>
             </label>
             <br></br><br></br>
           <button class="formField" type="submit">Laske</button>
         </form>
       </div>
-
     )
   }
 
