@@ -1,6 +1,6 @@
  body {
   color: rgb(2, 2, 2);
-  padding: 120px;
+  padding: 15px;
   font-family: Arial;
   text-align: center;
   background-image: url("../image.png");
@@ -19,7 +19,7 @@ h2 {
 }
 
 label {
-  font-size: small;
+  font-size: 1em;
   font-family: 'Bodoni MT', serif;
 }
 

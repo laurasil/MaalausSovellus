@@ -52,6 +52,7 @@ import './App.css';
     return(
       <div className="lomake">
         <h1>Maalilaskuri</h1>
+        <h2>Tässä voit laskea taloyhtiöllesi tarvittavan maalin määrän ja kustannukset.</h2>
   
         <form class="form" onSubmit={handleSubmit}>
             <label>
